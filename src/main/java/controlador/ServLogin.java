@@ -24,18 +24,17 @@ public class ServLogin extends HttpServlet {
 
         String user = request.getParameter("user");
         String pass = request.getParameter("password");
+
+        HttpSession session = request.getSession(false);
+
+        if (session == null) {
+            session = request.getSession(true);
+        }
+
         List<Usuario> lista = usuario_dao.login(user, pass);
 
         if (lista != null) {
             usuario_dto = lista.get(0);
-
-            HttpSession session = request.getSession(false);
-
-            if (session == null) {                
-                session = request.getSession(true);
-            } 
-
-            //HttpSession session = request.getSession(true);
 
             session.setAttribute("idusuario", usuario_dto.getIdusuario());
             session.setAttribute("idrol", usuario_dto.getRol().getIdrol());
@@ -53,7 +52,7 @@ public class ServLogin extends HttpServlet {
                     break;
             }
         } else {
-            response(response, "usuario incorrecto");
+            session.setAttribute("error", true);
         }
 
     }

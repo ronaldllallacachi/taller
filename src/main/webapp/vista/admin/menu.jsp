@@ -6,7 +6,9 @@
         TALLER UTP
     </a>
     <hr class="sidebar-divider my-0"> 
-    <jsp:include page="rolname.jsp"/>
+    <li class="nav-item text-center active mt-3">
+        <p class="text-uppercase text-white font-weight-bold">${rol}</p>
+    </li>
     <hr class="sidebar-divider my-0"> 
     <li class="nav-item active">
         <a class="nav-link" href="<%= request.getContextPath()%>/ServAdminUsuarios">
