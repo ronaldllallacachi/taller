@@ -1,13 +1,16 @@
 dao\FichaDAO.class
 dao\RolDAO.class
 dto\Usuario.class
+controlador\ServAdminFicha.class
 dao\IFicha.class
 controlador\ServLogin.class
 dto\Horario.class
 dao\conexion.class
 dto\Ficha.class
 controlador\ServLogout.class
+controlador\ServAdminAddUsuario.class
 controlador\ServTecnicos.class
+controlador\ServAdminUsuarios.class
 dto\Rol.class
 dao\UsuarioDAO.class
 controlador\ServFicha.class

@@ -9,13 +9,22 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>JSP Page</title>
     </head>
-    <body>      
-    <c:if test="${user.age ge 40}">
-        You are over the hill.
-    </c:if>
+    <body>
+        <%
+            String mensaje = "";
+            if (request.getParameter("error") != null) {
+        %>
+
+        <div class="container alert alert-danger alert-dismissible fade show mt-1" role="alert" style="width: 400px;">
+            <b>Usuario y/o Clave Incorrecta!</b>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <%
+            }
+        %>
     <center>
-        <div class="container shadow-lg p-3 mb-5 bg-white rounded" style="width: 300px;">
-            <form action="<%= request.getContextPath()%>/ServLogin" class="form-control mt-6" method="post">
+        <div class="container shadow-lg p-3 mb-5 bg-white rounded mt-5" style="width: 300px;">
+            <form action="<%= request.getContextPath()%>/ServLogin" class="form-control " method="post">
                 <h3>Ingreso al Sistema</h3>                    
                 <img src="recursos/img/profile.png" class="img-fluid">
 

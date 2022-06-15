@@ -39,7 +39,6 @@ public class ServLogin extends HttpServlet {
             session.setAttribute("idusuario", usuario_dto.getIdusuario());
             session.setAttribute("idrol", usuario_dto.getRol().getIdrol());
             session.setAttribute("rol", usuario_dto.getRol().getNombre());
-            
 
             switch (usuario_dto.getRol().getIdrol()) {
                 case 1:
@@ -52,9 +51,10 @@ public class ServLogin extends HttpServlet {
                     response.sendRedirect(request.getContextPath() + "/vista/admin/index.jsp");
                     break;
             }
-        } else {            
-            request.setAttribute("error", "si");
-            getServletContext().getRequestDispatcher("/").forward(request, response);
+        } else {
+            
+            
+            response.sendRedirect("index.jsp?error=si");
         }
     }
 
