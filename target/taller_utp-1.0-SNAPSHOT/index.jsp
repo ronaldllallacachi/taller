@@ -9,22 +9,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>JSP Page</title>
     </head>
-    <body>
-        <p>${error}ss</p>
-    <c:if test="${error == true}"">
-        <div class="d-flex flex-row-reverse m-2">            
-            <div class="toast show bg-danger">
-                <div class="toast-header">
-                    <img src="recursos/img/cancelar.png" alt=""/>
-                    <strong class="me-auto">Error</strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-                </div>
-                <div class="toast-body bg-white">
-                    <p>${error}</p>
-                </div>
-            </div>
-        </div>
-    </c:if>
+    <body>      
+           
     <center>
         <div class="container shadow-lg p-3 mb-5 bg-white rounded" style="width: 300px;">
             <form action="<%= request.getContextPath()%>/ServLogin" class="form-control mt-6" method="post">
