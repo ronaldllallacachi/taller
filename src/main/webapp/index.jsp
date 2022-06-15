@@ -10,7 +10,9 @@
         <title>JSP Page</title>
     </head>
     <body>      
-           
+    <c:if test="${user.age ge 40}">
+        You are over the hill.
+    </c:if>
     <center>
         <div class="container shadow-lg p-3 mb-5 bg-white rounded" style="width: 300px;">
             <form action="<%= request.getContextPath()%>/ServLogin" class="form-control mt-6" method="post">
