@@ -51,9 +51,7 @@ public class ServLogin extends HttpServlet {
                     response.sendRedirect(request.getContextPath() + "/vista/admin/index.jsp");
                     break;
             }
-        } else {
-            
-            
+        } else {  
             response.sendRedirect("index.jsp?error=si");
         }
     }

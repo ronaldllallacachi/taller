@@ -12,7 +12,7 @@
             <p class="mb-1">Usuario:</p>
             <input class="form-control"
                    type="text"
-                   name="user"
+                   name="txtuser"
                    required=""
                    oninvalid="this.setCustomValidity('Ingrese nombre de usuario')">
 
@@ -21,7 +21,7 @@
 
             <input class="form-control mb-3"
                    type="password"
-                   name="password"
+                   name="txtpassword"
                    required=""
                    oninvalid="this.setCustomValidity('Ingrese Contraseña')">
 

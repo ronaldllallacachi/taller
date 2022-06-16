@@ -28,7 +28,7 @@ public class UsuarioDAO implements IUsuario {
             conn = con.getConexion();
             pst = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             pst.setString(1, u.getUsuario());
-            pst.setString(2, u.getUsuario());
+            pst.setString(2, u.getPassword());
             pst.setInt(3, u.getRol().getIdrol());
             pst.setBoolean(4, u.getEstado());
             pst.executeUpdate();
@@ -39,6 +39,7 @@ public class UsuarioDAO implements IUsuario {
             conn.close();
             con.Desconectar();
         } catch (Exception e) {
+            resultado = -1;
             System.out.println("ERROR: " + e.getMessage());
         }
         return resultado;
