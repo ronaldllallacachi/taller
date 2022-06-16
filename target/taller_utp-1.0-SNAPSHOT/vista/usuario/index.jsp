@@ -3,8 +3,6 @@
 <html>
     <jsp:include page="header.jsp"/>
     <body>
-        <center>
-            <jsp:include page="form_registro.jsp"/>
-        </center>
+        <jsp:include page="form_registro.jsp"/>
     </body>
 </html>
