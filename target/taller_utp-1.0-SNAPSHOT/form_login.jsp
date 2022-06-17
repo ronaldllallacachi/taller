@@ -9,7 +9,7 @@
         <input class="form-control"
                type="text"
                name="user"
-               required=""
+               required="required"
                oninvalid="this.setCustomValidity('Ingrese nombre de usuario')">
 
         <h5 class="text-left m-2"/>
@@ -18,7 +18,7 @@
         <input class="form-control"
                type="password"
                name="password"
-               required=""
+               required="required"
                oninvalid="this.setCustomValidity('Ingrese Contraseña')">
 
         <br/>
@@ -30,7 +30,7 @@
         </div>
     </form>
     <form action="<%= request.getContextPath()%>/ServUsuarios" class="mb-0">
-        <div class="float-left mb-1">
+        <div class="mb-1">
             <p class="lead ml-2">
                 ¿No estas Registrado?
             </p>
