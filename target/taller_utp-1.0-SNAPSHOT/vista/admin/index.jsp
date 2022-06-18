@@ -8,9 +8,7 @@
         <div id="wrapper">
             <jsp:include page="menu.jsp"/>
             <div id="content-wrapper" class="d-flex flex-column" ">
-                <div id="content" class="d-flex p-2">
-                    <img class="img-fluid img-thumbnail" src="<%= request.getContextPath()%>/recursos/img/logo_admin.png" />
-                </div>
+                <img class="img-fluid img-thumbnail" src="<%= request.getContextPath()%>/recursos/img/logo_admin.png" />
             </div>
         </div>
         <jsp:include page="footer.jsp"/>
