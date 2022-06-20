@@ -7,7 +7,6 @@
     <jsp:include page="../head.jsp"/>
 
     <body id="page-top">
-
         <div id="wrapper">
             <jsp:include page="../menu.jsp"/>
             <div id="content-wrapper" class="d-flex flex-column" ">
@@ -40,7 +39,7 @@
                                             <td>
                                                 <c:choose>
                                                     <c:when test="${usu.rol.idrol == 1}">
-                                                        <a class="btn btn-info" href="" >
+                                                        <a class="btn btn-info" href="<%= request.getContextPath()%>/vista/admin/usuarios/horario/index.jsp?idusuario=${usu.idusuario}" >
                                                             <i class="bi bi-calendar-week"></i>
                                                             </i>
                                                             Horario
