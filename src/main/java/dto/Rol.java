@@ -2,8 +2,8 @@ package dto;
 
 public class Rol {
 
-    public int idrol;
-    public String nombre;
+    private int idrol;
+    private String nombre;
 
     public Rol() {
     }
@@ -28,6 +28,5 @@ public class Rol {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
 
 }

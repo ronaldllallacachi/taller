@@ -17,6 +17,27 @@
             </i>
         </a>
     </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="<%= request.getContextPath()%>/ServAdminUsuarios">
+            <i class="bi bi-file-person-fill" style="font-size: 1.2rem;">
+                Servicios
+            </i>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="<%= request.getContextPath()%>/ServAdminUsuarios">
+            <i class="bi bi-file-person-fill" style="font-size: 1.2rem;">
+                Atención
+            </i>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="<%= request.getContextPath()%>/ServEquipos">
+            <i class="bi bi-file-person-fill" style="font-size: 1.2rem;">
+                Equipos
+            </i>
+        </a>
+    </li>
     <hr class="sidebar-divider my-0"> 
     <li class="nav-item active">
         <a class="nav-link" href="<%= request.getContextPath()%>/ServLogout">
